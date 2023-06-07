@@ -1,0 +1,20 @@
+Name 		: Deep Gohil
+Roll Number : 11
+Subject 	: Operating Systems
+Assignment 	: Assignment 2
+Course 	: MCA - 2
+
+--------------------------------------------------------------------------------------------------------------
+
+8. Write a script that shows usernames and no. of processes running for them.
+
+usernames=$(ps -eo user= | sort | uniq)
+
+for username in $usernames; do
+    process_count=$(ps -u $username | wc -l)
+    echo "Username: $username | Number of Processes: $((process_count - 1))"
+done
+
+OUTPUT:
+Username: deepgohil | Number of Processes: 6
+Username: root | Number of Processes: 3

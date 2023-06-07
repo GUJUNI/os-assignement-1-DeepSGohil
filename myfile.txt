@@ -1,0 +1,14 @@
+Name 		: Deep Gohil
+Roll Number : 11
+Subject 	: Operating Systems
+Assignment 	: Assignment 2
+Course 	: MCA - 2
+
+--------------------------------------------------------------------------------------------------------------
+*) myfile.txt
+abc
+welcome
+This is my file.
+123456
+good morning
+ spaced line

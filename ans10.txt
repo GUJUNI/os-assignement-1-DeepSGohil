@@ -1,0 +1,26 @@
+Name 		: Deep Gohil
+Roll Number : 11
+Subject 	: Operating Systems
+Assignment 	: Assignment 2
+Course 	: MCA - 2
+
+--------------------------------------------------------------------------------------------------------------
+
+10. Write a shell script to display list of files which can be either regular or directory along with number of links in ascending order of links.
+
+ls -1la | awk '{print $2 " " $3 " " $4 " " $5 " " $6 " " $7 " " $8 " " $9}' | sort -n -k 2
+
+
+OUTPUT:
+1 deepgohil deepgohil 0 May 8 00:37 .motd_shown
+1 deepgohil deepgohil 1596 May 8 00:45 .viminfo
+1 deepgohil deepgohil 191 May 8 00:57 sh1.sh
+1 deepgohil deepgohil 220 May 8 00:37 .bash_logout
+1 deepgohil deepgohil 3771 May 8 00:37 .bashrc
+1 deepgohil deepgohil 62 May 8 00:47 myfile.txt
+1 deepgohil deepgohil 62 May 8 00:50 myfile.txt+1
+1 deepgohil deepgohil 807 May 8 00:37 .profile
+3 deepgohil deepgohil 4096 May 8 00:49 .local
+3 deepgohil deepgohil 4096 May 8 00:57 .
+3 root root 4096 May 8 00:37 ..
+40

@@ -1,0 +1,23 @@
+NAME 		: Deep Gohil
+ROLL NUMBER : 11
+SUBJECT 	: Operating Systems
+ASSIGNMENT 	: Assignment 2
+COURSE 	: MCA - 2
+
+--------------------------------------------------------------------------------------------------------------
+
+1. Write a script that takes file name from user and display all line starting with a or b or c. (Use grep/sed)
+
+read -p "Enter file name : " file
+
+if [ -f $file ]
+then
+        grep "^[abc]" $file
+else
+        echo "File does not exists"
+fi
+
+OUTPUT : 
+Enter file name : myfile.txt
+abc
+

@@ -1,0 +1,28 @@
+NAME 		: Deep Gohil
+ROLL NUMBER : 11
+SUBJECT 	: Operating Systems
+ASSIGNMENT 	: Assignment 2
+COURSE 	: MCA - 2
+
+--------------------------------------------------------------------------------------------------------------
+
+3. Write a script that takes file name from user and display all line starting not with a or b or c with line numbers. (Use grep/sed)
+
+read -p "Enter file name : " file
+
+if [ -f $file ]
+then
+        grep -nv "^[abc]" $file
+else
+        echo "File does not exists"
+fi
+
+OUTPUT : 
+
+Enter file name : myfile.txt
+2:welcome
+3:This is my file.
+4:123456
+5:good morning
+6: spaced line
+

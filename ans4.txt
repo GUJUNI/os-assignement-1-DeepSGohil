@@ -1,0 +1,30 @@
+NAME 		: Deep Gohil
+ROLL NUMBER : 11
+SUBJECT 	: Operating Systems
+ASSIGNMENT 	: Assignment 2
+COURSE 	: MCA - 2
+
+--------------------------------------------------------------------------------------------------------------
+
+4. Write a script that takes file name from user and substitute all spaces “ “ with # value. (Use grep/sed)
+
+read -p "Enter file name : " file
+
+if [ -f $file ]
+then
+        newFileName=$file+"1"
+        cp $file $newFileName
+        sed 's/ /#/' $file
+else
+        echo "File does not exist"
+fi
+
+OUTPUT : 
+
+Enter file name : myfile.txt
+abc
+welcome
+This#is my file.
+123456
+good#morning
+#spaced line

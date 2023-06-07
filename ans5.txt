@@ -1,0 +1,22 @@
+Name 		: Deep Gohil
+Roll Number : 11
+Subject 	: Operating Systems
+Assignment 	: Assignment 2
+Course 	: MCA - 2
+
+--------------------------------------------------------------------------------------------------------------
+
+5. Write a script that takes file name from user and display all line start with t or T and second character must be either ‘h’ or ‘s’. (Use grep/sed)
+
+read -p "Enter file name : " file
+
+if [ -f $file ]
+then
+        grep "^[tT][hs]" $file
+else
+        echo "File does not exists"
+fi
+
+OUTPUT : 
+Enter file name : myfile.txt
+This is my file.

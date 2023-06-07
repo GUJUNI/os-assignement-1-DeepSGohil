@@ -1,0 +1,22 @@
+Name 		: Deep Gohil
+Roll Number : 11
+Subject 	: Operating Systems
+Assignment 	: Assignment 2
+Course 	: MCA - 2
+
+--------------------------------------------------------------------------------------------------------------
+
+6. Write a script that takes file name from user and display all line start with space(‘ ‘) . (Use grep/sed)
+
+read -p "Enter file name : " file
+
+if [ -f $file ]
+then
+        grep "^[ ]" $file
+else
+        echo "File does not exists"
+fi
+
+OUTPUT : 
+Enter file name : myfile.txt
+ spaced line
